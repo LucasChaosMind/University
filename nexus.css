@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;300;400&display=swap');
+:root{
+    --upcolor: #cd178c;
+}
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Noto Sans Display', Arial, sans-serif;
+}
+body{
+    background-color: #171717;
+}
+/*Header*/
+header{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url(img/MartaSiedlecka.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;   
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--upcolor);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 56px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.hero-cta{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-cta:hover{
+    border: 1px solid var(--upcolor);
+    background: var(--upcolor);
+    box-shadow: 2px 2px #fff;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+/*End of the Header*/
+/*Curse Section*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+/*Title and sub-title of the section*/
+.title-section{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+.sub-section{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/*End title and sub-title css*/
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    border: 1px solid var(--upcolor);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col h3{
+    color: var(--upcolor);
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col p{
+    color: #fff;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px var(--upcolor);
+}
+/*End of Curse Section*/
+/*Campus Section*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px ;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.campus-col:hover{
+    box-shadow: 2px 2px 1px var(--upcolor);
+}
+.campus-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0; 
+}
+.layer:hover{
+    background: rgba(0, 0, 0, 0.4);;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    opacity: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*End of Campus Section*/
+/*Facilities Section*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    height: 90%;
+    background-position: center;
+    image-resolution: cover;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 0;
+    margin-bottom: 4px;
+    color: #fff;
+}
+.facilities-col h3{
+    color: #fff;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/*End of Facilities Section*/
+
+/*Testimonials Section*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px ;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    border: 1px solid var(--upcolor);
+    margin-bottom: 5%;
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.testimonial-col img{
+    width: 44%;
+    margin-left: 5px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.testimonial-col p{
+    color: #fff;
+    padding: 0;
+    font-size: 14px;
+}
+.testimonial-col h3{
+    color: var(--upcolor);
+    font-size: 18px;
+    text-align: left;
+}
+.testimonial-col i{
+    color: #fff;
+}
+/*End of Testimonials Section*/
+/*CTA Section*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url(img/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta .title-section{
+    margin-bottom: 40px;
+    padding: 0;
+}
+/*End of CTA Section*/
+
+/*Footer*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--upcolor);
+}
+.icons .fa{
+    font-size: 22px;
+    color: #fff;
+    margin: 0 7px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.icons .fa:hover{
+    text-shadow: 0 0 10px var(--upcolor);
+}
+.fa-heart-o{
+    color: var(--upcolor);
+}
+@media (max-width:480px){
+    html{
+        width: 100vw;
+        width: max-content;
+    }
+    body{
+        width: 100vw;
+    }
+    header{
+        max-width: 100vw;
+        height: 100vh;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 14px;
+    }
+    .title-section{
+        font-size: 20px;
+    }
+    .sub-section{
+        font-size: 14px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: var(--upcolor);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -250px;
+        text-align: center;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        text-align: left;
+        margin: 10px;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .testimonial-col h3{
+        font-size: 14px;
+    }
+    .testimonial-col p{
+        font-size: 12px;
+    } 
+}
