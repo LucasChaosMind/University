@@ -216,6 +216,10 @@ nav .fa{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    cursor: pointer;
+}
+.facilities-col:hover h3{
+    color: var(--upcolor);   
 }
 .facilities-col img{
     width: 100%;
@@ -234,13 +238,14 @@ nav .fa{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+    transition: 0.5s;
 }
 /*End of Facilities Section*/
 
 /*Testimonials Section*/
 .testimonials{
     width: 80%;
-    margin: 0;/*auto*/
+    margin: 100px 0;/*auto*/
     text-align: center;
     padding-top: 50px ;
 }
@@ -377,5 +382,8 @@ footer h4{
     }
     .testimonial-col p{
         font-size: 12px;
+    }
+    .testimonial-col .fa{
+        font-size: 0.8rem;
     } 
 }
