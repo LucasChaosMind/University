@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="nexus.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="img/logoLow.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Curse</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="title-section">Certificate & Online Programs for 2022</h1>
+        <p></p>
+    </section>
+    <!--Blog Section -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg">
+                <h2 calss="title-section">Certificate & Online Programs for 2022</h2>
+                <p class="sub-section">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter E-mail">
+                        <textarea rows="5" placeholder="Your Comment"></textarea> 
+                        <button type="submit" class="hero-cta">Post Comment</button>
+                    </form>
+                </div>
+            
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Data Science</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Analysis and Systems Development</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Computer Engineering</span>
+                    <span>7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End of Blog Section-->
+    <!--Footer-->
+    <footer>
+        <h4>Developed for Lucas C. Bresolino</h4>
+        <p class="sub-section">This Website have be create for my studying of HTML and CSS</p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+        <p class="sub-section">Made With Orientation of Easy Tutorials <i class="fa fa-heart-o"></i></p>
+    </footer>
+    <!--End Site-->
+</body>
+<!--JavaScript Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+        navLinks.style.display="block";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-250px";
+        navLinks.style.display="none";
+    }
+</script>
+</html>

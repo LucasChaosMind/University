@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="nexus.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="img/logoLow.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Curse</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="title-section">Coueses</h1>
+        <p></p>
+    </section>
+    <!--Course Section-->
+    <section class="course">
+        <h1 class="title-section">Curses We Offer</h1>
+        <p class="sub-section">The Best Cursos of Technology and Science of Computation</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Analysis and Systems Development</h3>
+                <p>College Course for people love programing and need more orientation for your development</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree Full Stack Web and Mobile</h3>
+                <p>Course for Web and mobile development</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree in Machine learning</h3>
+                <p>Hard level programming development, for the experts science of the data</p>
+            </div>
+        </div>
+    </section>
+    <!--End course Section-->
+    <!--Facilities Section-->
+    <section class="facilities">
+        <h1 class="title-section">Our Facilities</h1>
+        <p class="sub-section">Facilites for Studying</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/library.jpg">
+                <h3>Library in University</h3>
+                <p>Library int he University and Online</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/studyCentres.jpg">
+                <h3>Study Centres</h3>
+                <p>Local for you studying</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/StudyLanguages.jpg">
+                <h3>Language Support</h3>
+                <p>Learn language</p>
+            </div>
+        </div>
+    </section>
+    <!--End Facilites Section-->
+    <!--Footer-->
+    <footer>
+        <h4>Developed for Lucas C. Bresolino</h4>
+        <p class="sub-section">This Website have be create for my studying of HTML and CSS</p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+        <p class="sub-section">Made With Orientation of Easy Tutorials <i class="fa fa-heart-o"></i></p>
+    </footer>
+    <!--End Site-->
+</body>
+<!--JavaScript Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+        navLinks.style.display="block";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-250px";
+        navLinks.style.display="none";
+    }
+</script>
+</html>

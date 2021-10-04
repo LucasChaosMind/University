@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="nexus.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="img/logoLow.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Curse</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="title-section">About Us</h1>
+        <p></p>
+    </section>
+    <!--About us-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1 class="title-section">University in Nederland Open for students of all the World</h1>
+                <p class="sub-section">University for lovers of the science, lover of the technology and lover of the computing, yes this is the best university for desenvolve your technology career</p>
+                <a href="#" class="hero-cta">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg">
+            </div>
+        </div>
+    </section>
+    <!--End About Us-->
+    <!--Footer-->
+    <footer>
+        <h4>Developed for Lucas C. Bresolino</h4>
+        <p class="sub-section">This Website have be create for my studying of HTML and CSS</p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+        <p class="sub-section">Made With Orientation of Easy Tutorials <i class="fa fa-heart-o"></i></p>
+    </footer>
+    <!--End Site-->
+</body>
+<!--JavaScript Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+        navLinks.style.display="block";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-250px";
+        navLinks.style.display="none";
+    }
+</script>
+</html>
